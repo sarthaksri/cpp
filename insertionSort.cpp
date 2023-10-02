@@ -13,11 +13,6 @@ void insertionSort(int arr[], int n)
             j--;
        }
        arr[j+1] = key;
-       for(k=0; k<n; k++)
-        {
-           cout<<arr[k]<<" ";
-        }
-        cout<<endl;
     }
 }
 int main()

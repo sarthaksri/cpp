@@ -5,9 +5,9 @@ struct node
 {
     int item;
     struct node *next;
-}*newNode;
+}*newNode,*top;
 
-struct node *head=NULL,*top;
+struct node *head=NULL;
 
 void push()
 {
