@@ -22,7 +22,7 @@ void bubbleSort(int arr[], int n)
 int main()
 {
     int i,n;
-    int arr[] = {10, 60, 40, 90, 70, 50, 30, 80, 20, 100};
+    int arr[] = {10, 60, 40, 90, 100, 70, 50, 30, 80, 20};
     //int arr[] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
     n = sizeof(arr)/sizeof(int);
     bubbleSort(arr, n);
