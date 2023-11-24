@@ -65,6 +65,34 @@ class node
 
     void inorderTraversal(node* root)
     {
+        if(root == NULL)
+        return;
+
+        inorderTraversal(root->left);
+        cout<<root->data<<" ";
+        inorderTraversal(root->right);
+
+    }
+
+    void preorderTraversal(node* root)
+    {
+        if(root == NULL)
+        return;
+
+        cout<<root->data<<" ";
+        preorderTraversal(root->left);
+        preorderTraversal(root->right);
+
+    }
+
+    void postorderTraversal(node* root)
+    {
+        if(root == NULL)
+        return;
+
+        postorderTraversal(root->left);
+        postorderTraversal(root->right);
+        cout<<root->data<<" ";
 
     }
 
@@ -76,5 +104,11 @@ int main()
     root = root->buildTree(root);
     //1 3 7 -1 -1 11 -1 -1 5 17 -1 -1 -1
     //levelOrderTraversal 
-   // root->levelOrderTraversal(root);
+    root->levelOrderTraversal(root);
+    cout<<endl;
+    root->inorderTraversal(root);
+    cout<<endl;
+    root->preorderTraversal(root);
+    cout<<endl;
+    root->postorderTraversal(root);
 }
