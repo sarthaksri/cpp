@@ -48,8 +48,10 @@ class node
         if(root == NULL)
         return NULL;
 
-        minValue(root->left);
-        return root;
+        node* temp = root;
+        while(temp->left != NULL)
+        temp = temp->left;
+        return temp;
     }
 
     node* deleteNode(node* root, int val)
