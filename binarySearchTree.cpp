@@ -142,7 +142,6 @@ int main()
 {
     node* root = NULL;
 
-   
     root->takeInput(root);
 
     cout<<"Printing the BST: "<<endl;
