@@ -22,7 +22,7 @@ void merge(int arr[], int s, int e)
         second[i] = arr[k++];
     }
 
-    i = 0, j = 0; k = s;
+    i = 0; j = 0; k = s;
     while(i<len1 && j<len2)
     {
         if(first[i] < second[j])
@@ -30,7 +30,7 @@ void merge(int arr[], int s, int e)
         else
         arr[k++] = second[j++];
     }
-
+    
     while(i < len1)
         arr[k++] = first[i++];
 
