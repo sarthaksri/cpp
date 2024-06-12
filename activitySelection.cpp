@@ -51,8 +51,7 @@ int main()
 { 
 // 	int s[] = { 1, 3, 0, 5, 8, 5 }; 
 // 	int f[] = { 2, 4, 6, 7, 9, 9 }; 
-	vector<pair<int,int>> activity = { { 5, 9 }, { 1, 2 }, { 3, 4 },
-                                       { 0, 6 }, { 5, 7 }, { 8, 9 } };
+	vector<pair<int,int>> activity = { { 900, 1000 }, { 930, 1100 }, { 1030, 1200 }, { 1130, 1300 }, {1400, 1500}};
 // 	int n = sizeof(s) / sizeof(s[0]); 
 
 // 	printMaxActivities(s, f, n); 
